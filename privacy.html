@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yukitary 隱私權政策 / Privacy Policy</title>
+<style>
+  :root {
+    --ink: #2b2530;
+    --muted: #6b6470;
+    --accent: #8a63d2;
+    --line: #e6e1ec;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", Roboto, sans-serif;
+    line-height: 1.75;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 96px;
+  }
+  header.page {
+    margin-bottom: 32px;
+  }
+  header.page h1 {
+    font-size: 1.7rem;
+    margin: 0 0 6px;
+  }
+  header.page .sub {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  nav.top {
+    margin-bottom: 28px;
+    font-size: 0.9rem;
+  }
+  nav.top a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 16px;
+  }
+  nav.top a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.4em;
+    margin-bottom: 0.5em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  p.en {
+    color: var(--muted);
+    font-size: 0.93rem;
+  }
+  ul, ol {
+    padding-left: 1.4em;
+  }
+  li { margin-bottom: 0.4em; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 8px 10px;
+    text-align: left;
+  }
+  th { background: #f7f4fa; }
+  .notice {
+    background: #f7f4fa;
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 0.93rem;
+  }
+  footer.page {
+    margin-top: 4em;
+    padding-top: 1.4em;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+  code { background: #f2eff6; padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="top">
+    <a href="privacy.html">隱私權政策 Privacy Policy</a>
+    <a href="terms.html">服務條款 Terms of Service</a>
+  </nav>
+
+  <header class="page">
+    <h1>Yukitary 隱私權政策</h1>
+    <div class="sub">Privacy Policy · 最後更新 / Last updated: 2026-09-19</div>
+  </header>
+
+  <p>本頁說明 Yukitary（懸浮桌面 AI 秘書 App，套件名稱 <code>com.winmoon.yuki</code>，以下稱「本 App」）如何處理您的資訊。本 App 由開發者 Winmoon 獨立開發，<strong>並非 Google、OpenAI 或 Anthropic 之官方產品</strong>，亦未經上述公司審查、贊助、認證或背書。</p>
+  <p class="en">This page explains how Yukitary (a floating desktop AI secretary app, package name <code>com.winmoon.yuki</code>, "the App") handles your information. The App is independently developed by Winmoon and is <strong>not an official product of Google, OpenAI, or Anthropic</strong>, and has not been reviewed, sponsored, certified, or endorsed by any of them.</p>
+
+  <h2>一、純前端架構，沒有開發者伺服器</h2>
+  <p>本 App 採用<strong>純前端</strong>架構：我們沒有自己的後端伺服器，也不會將您的對話內容、照片、記事本、行事曆或鬧鐘資料上傳到任何由開發者營運的伺服器。這些內容僅儲存在您的裝置本機資料庫中。</p>
+  <p class="en">The App uses a <strong>pure front-end</strong> architecture: we operate no backend server of our own, and never upload your chat content, photos, notes, calendar entries, or alarms to any server run by the developer. This data is stored only in your device's local database.</p>
+
+  <h2>二、我們處理的資訊</h2>
+  <ul>
+    <li>您與 AI 助理（小雪）的對話文字</li>
+    <li>您拍攝或上傳的照片（拍照辨識功能）</li>
+    <li>您執行螢幕翻譯時擷取的畫面內容</li>
+    <li>您的語音輸入（由裝置/系統語音辨識轉為文字）</li>
+    <li>您建立的記事本、行事曆事件、鬧鐘提醒</li>
+    <li>您自行輸入的第三方 AI 服務 API 金鑰（目前為 Gemini，未來可能加入 OpenAI、Anthropic）</li>
+  </ul>
+  <p class="en">Information the App handles: your chat text with the AI assistant (Yuki); photos you take or upload for photo recognition; screen content captured during screen translation; voice input converted to text by your device; notes, calendar events, and alarms you create; and any third-party AI API key you enter yourself (currently Gemini; OpenAI and Anthropic may be added later).</p>
+
+  <h2>三、BYOK（自備金鑰）與資料傳輸</h2>
+  <p>本 App 採用 <strong>BYOK（Bring Your Own Key）</strong>模式。當您使用 AI 對話、拍照辨識或螢幕翻譯時，您輸入的文字、照片或畫面內容會<strong>透過加密連線（HTTPS）直接由您的裝置傳送給您所選擇的第三方 AI 服務供應商</strong>，本 App 不會經手、攔截或保存傳輸內容。您的 API 金鑰僅加密儲存在您的裝置上，開發者無法、也沒有權限存取。</p>
+  <p class="en">The App uses a <strong>BYOK (Bring Your Own Key)</strong> model. When you use AI chat, photo recognition, or screen translation, the text, photo, or screen content you provide is sent <strong>directly from your device to the third-party AI provider you selected, via encrypted transmission (HTTPS)</strong>; the App never intercepts or retains this content in transit. Your API key is stored only on your device, encrypted, and the developer cannot and has no authorization to access it.</p>
+  <p>該內容之後續處理，適用該第三方服務供應商自己的隱私權政策，建議另行參閱：Google（Gemini API）— https://policies.google.com/privacy 。</p>
+  <p class="en">Subsequent handling of that content is governed by the relevant provider's own privacy policy; please review: Google (Gemini API) — https://policies.google.com/privacy.</p>
+
+  <h2>四、備份與雲端硬碟</h2>
+  <p>手動匯出備份功能會產生本機 zip 檔案，您可自行選擇儲存位置，包含您裝置上已安裝的個人雲端硬碟帳號（如 Google 雲端硬碟、pCloud）。<strong>開發者無法、也沒有權限存取您的個人雲端硬碟</strong>，備份檔案不含您的 API 金鑰。</p>
+  <p class="en">The manual backup export produces a local zip file, which you may save to a location of your choosing, including your own personal cloud storage account already set up on your device (e.g. Google Drive, pCloud). <strong>The developer cannot and has no authorization to access your personal cloud storage.</strong> Backup files never include your API key.</p>
+
+  <h2>五、裝置權限（最小權限原則）</h2>
+  <p>本 App 僅依功能需要請求下列權限，遵循最小權限原則：</p>
+  <p class="en">The App requests only the permissions each feature genuinely needs, following the principle of least privilege:</p>
+  <table>
+    <tr><th>權限 / Permission</th><th>用途 / Purpose</th></tr>
+    <tr><td>懸浮視窗 SYSTEM_ALERT_WINDOW</td><td>顯示小雪懸浮視窗 / Show the floating Yuki window</td></tr>
+    <tr><td>相機 Camera</td><td>拍照辨識 / Photo recognition</td></tr>
+    <tr><td>麥克風 Microphone</td><td>語音輸入 / Voice input</td></tr>
+    <tr><td>行事曆 Calendar</td><td>建立/讀取本機行事曆事件 / Local calendar events</td></tr>
+    <tr><td>精準鬧鐘 SCHEDULE_EXACT_ALARM</td><td>準確時間提醒 / Precisely timed reminders</td></tr>
+    <tr><td>螢幕擷取 MediaProjection</td><td>螢幕翻譯 / Screen translation</td></tr>
+    <tr><td>通知 Notifications</td><td>顯示提醒與鬧鐘通知 / Reminder and alarm notifications</td></tr>
+    <tr><td>網路存取 INTERNET／ACCESS_NETWORK_STATE</td><td>將訊息、照片、畫面內容傳送給第三方 AI 服務並取得回覆 / Send messages, photos, screen content to your chosen AI provider and receive a reply</td></tr>
+    <tr><td>藍牙裝置連線 BLUETOOTH_CONNECT</td><td>語音輸入時可選擇藍牙麥克風 / Choose a Bluetooth microphone for voice input</td></tr>
+    <tr><td>前景服務通知 FOREGROUND_SERVICE 等</td><td>懸浮視窗／螢幕翻譯在背景運作時依系統規定顯示常駐通知 / Persistent notification required while the floating window or screen translation keeps running in the background</td></tr>
+    <tr><td>開機自動啟動 RECEIVE_BOOT_COMPLETED</td><td>重開機後可繼續收到已設定的提醒 / Keep scheduled reminders working after a restart</td></tr>
+    <tr><td>忽略電池最佳化 REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td><td>避免系統省電機制中斷懸浮視窗或提醒 / Prevent battery optimizations from interrupting the floating window or reminders</td></tr>
+    <tr><td>設定鬧鐘 SET_ALARM</td><td>建立鬧鐘捷徑（部分機型因系統限制目前暫時無法使用）/ Create an alarm shortcut (currently unavailable on some devices due to manufacturer restrictions)</td></tr>
+  </table>
+
+  <h2>六、資料刪除</h2>
+  <p>您可在 App 內個別刪除對話、照片、記事本或行事曆項目；<strong>解除安裝本 App 會移除裝置本機儲存的所有資料</strong>（對話紀錄、記事本、行事曆、鬧鐘、API 金鑰皆為本機儲存，不會殘留在任何伺服器）。建議在解除安裝前先使用備份功能匯出您想保留的資料。</p>
+  <p class="en">You can delete individual conversations, photos, notes, or calendar items within the App. <strong>Uninstalling the App removes all locally stored data</strong> (chat history, notes, calendar, alarms, and your API key are all stored locally only, never retained on any server). We recommend exporting a backup of anything you want to keep before uninstalling.</p>
+
+  <h2>七、廣告（AdMob）</h2>
+  <p>本 App 規劃使用 Google AdMob 提供橫幅與獎勵廣告（觀看廣告可解鎖每日使用額度或立繪內容）。AdMob 可能蒐集裝置廣告識別碼等資訊用於投放與衡量廣告成效，受 Google 隱私權政策規範：https://policies.google.com/privacy 。</p>
+  <p class="en">The App plans to use Google AdMob for banner and rewarded ads (watching an ad may unlock a daily usage quota or additional content). AdMob may collect information such as your device's advertising identifier for ad delivery and measurement, governed by Google's privacy policy: https://policies.google.com/privacy.</p>
+
+  <h2>八、兒童隱私</h2>
+  <p>本 App 不是特別針對兒童設計，我們不會刻意蒐集 13 歲以下兒童的個人資訊。</p>
+  <p class="en">The App is not directed at children, and we do not knowingly collect personal information from children under 13.</p>
+
+  <h2>九、政策異動</h2>
+  <p>我們可能不定期更新本頁內容，更新後將調整上方「最後更新」日期。</p>
+  <p class="en">We may update this page from time to time; the "Last updated" date above will reflect any change.</p>
+
+  <footer class="page">
+    開發者 / Developer：Winmoon　·　聯絡信箱 / Contact：yejh00290@gmail.com　·　套件名稱 / Package：com.winmoon.yuki
+  </footer>
+
+</div>
+</body>
+</html>

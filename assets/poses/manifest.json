@@ -1,3 +1,9 @@
 {
-  "poses": []
+  "poses": [
+    { "key": "cheers", "file": "yuki_cheers.png", "version": 1 },
+    { "key": "sit", "file": "yuki_sit.png", "version": 1 },
+    { "key": "nya", "file": "yuki_nya.png", "version": 1 },
+    { "key": "beckon", "file": "yuki_beckon.png", "version": 1 },
+    { "key": "prone", "file": "yuki_prone.png", "version": 1 }
+  ]
 }
